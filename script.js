@@ -41,7 +41,7 @@ document.getElementById('button').addEventListener('click', function () {
 
 function buttonPrompt() {
 	let userInput = parseInt(prompt('Pick a grid size between 16 and 96:', 16));
-	if (userInput != null && (userInput != NaN) & (userInput >= 16) && userInput <= 96) {
+	if (userInput != null && !isNaN(userInput) & (userInput >= 16) && userInput <= 96) {
 		return userInput;
 	} else {
 		return buttonPrompt();

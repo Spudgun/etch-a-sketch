@@ -33,7 +33,7 @@ body {
 }
 
 .grid-square {
-	outline: solid 0.1px; #f0f0f0;
+	outline: solid 0.1px #f0f0f0;
 }
 
 * {
