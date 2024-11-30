@@ -1,5 +1,4 @@
 const containerDimensions = 480;
-let opacity = 1;
 
 function setupGrid(gridSize) {
 	const container = document.getElementById('grid-container');
@@ -16,8 +15,6 @@ function setupGrid(gridSize) {
 
 		childElement.addEventListener('mouseenter', () => {
 			childElement.style.backgroundColor = generateRandomColor();
-			childElement.style.opacity = opacity;
-			opacity -= 0.1;
 		});
 	}
 }
@@ -35,7 +32,6 @@ function generateRandomColor() {
 
 document.getElementById('button').addEventListener('click', function () {
 	let gridSize = buttonPrompt();
-	opacity = 1;
 	setupGrid(gridSize);
 });
 
