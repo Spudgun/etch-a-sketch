@@ -12,6 +12,10 @@ function setupGrid(gridSize) {
 		childElement.style.width = gridDimensions + 'px';
 		childElement.style.height = gridDimensions + 'px';
 		container.appendChild(childElement);
+
+		childElement.addEventListener('mouseout', (element) => {
+			element.fromElement.style.backgroundColor = generateRandomColor();
+		});
 	}
 }
 
