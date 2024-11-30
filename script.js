@@ -2,7 +2,7 @@ const containerDimensions = 480;
 
 function setupGrid(gridSize) {
 	const container = document.getElementById('grid-container');
-	container.innterHtml = '';
+	container.innerHTML = '';
 	container.style.width = containerDimensions + 'px';
 	let gridDimensions = containerDimensions / gridSize;
 
@@ -26,4 +26,18 @@ function generateRandomColor() {
 	return `#${randColor.toUpperCase()}`;
 }
 
-setupGrid(64);
+document.getElementById('button').addEventListener('click', function () {
+	let gridSize = buttonPrompt();
+	setupGrid(gridSize);
+});
+
+function buttonPrompt() {
+	let userInput = parseInt(prompt('Pick a grid size between 16 and 96:', 16));
+	if (userInput != null && (userInput != NaN) & (userInput >= 16) && userInput <= 96) {
+		return userInput;
+	} else {
+		return buttonPrompt();
+	}
+}
+
+setupGrid(16);
