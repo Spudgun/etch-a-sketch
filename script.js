@@ -14,9 +14,9 @@ function setupGrid(gridSize) {
 		childElement.style.height = gridDimensions + 'px';
 		container.appendChild(childElement);
 
-		childElement.addEventListener('mouseout', (element) => {
-			element.fromElement.style.backgroundColor = generateRandomColor();
-			element.fromElement.style.opacity = opacity;
+		childElement.addEventListener('mouseenter', () => {
+			childElement.style.backgroundColor = generateRandomColor();
+			childElement.style.opacity = opacity;
 			opacity -= 0.1;
 		});
 	}
