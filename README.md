@@ -5,6 +5,8 @@ Creating a Etch-a-Sketch webpage using the [assignment](https://www.theodinproje
 ## Table of Contents
 
 -   [Assignment](#assignment)
+-   [Extra Credit](#extra-credit)
+-   [Solution](#solution)
 
 ## Assignment
 
@@ -43,3 +45,7 @@ Transform the behavior of a square when interacting with the mouse by introducin
     - **Hint**: The opacity CSS property is useful here. To learn how to use it, check this [MDN docs article about the opacity CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity).
 
 You can choose to do either one or both of these challenges, it's up to you.
+
+## Solution
+
+To view the solution, got to this webpage [here](https://spudgun.github.io/etch-a-sketch/).
